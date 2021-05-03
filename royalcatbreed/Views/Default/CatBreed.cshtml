@@ -1,0 +1,194 @@
+﻿@model royalcatbreed.Models.cats_front_page
+@{
+    ViewBag.Title = @Model.cat_name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @*<header class="jumbotron my-4">*@
+    <br />
+    <section class="member-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="img-container">
+                        <img class="card-img-top" src="~/Content/img/@Model.foto" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="member_designation">
+                        <h2>@Model.cat_name</h2>
+                    </div>
+                    <div class="member_desc">
+                        <p>
+                            @Model.cat_text
+                        </p>
+
+                    </div>
+                    <hr />
+                    <h4>Skills</h4>
+                    <div class="row ">
+
+                        <div class="col-lg-6 member_desc">
+
+                            <div class="progress-holder">
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Playfulness</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.playfulness" aria-valuemin="0" aria-valuemax="100" style="width: @Model.playfulness%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.atcivity_level%" aria-describedby="tooltip443011"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Activity Level</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.atcivity_level" aria-valuemin="0" aria-valuemax="100" style="width: @Model.atcivity_level%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.atcivity_level%" aria-describedby="tooltip656043"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Friendliness to Other Pets</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.friendliness_others" aria-valuemin="0" aria-valuemax="100" style="width: @Model.friendliness_others%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.friendliness_others%" aria-describedby="tooltip880607"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Friendliness to Children</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.friendliness_children" aria-valuemin="0" aria-valuemax="100" style="width: @Model.friendliness_children%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.friendliness_children%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Grooming Requirements</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.grooming_req" aria-valuemin="0" aria-valuemax="100" style="width: @Model.grooming_req%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.grooming_req%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Vocality</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.vocality" aria-valuemin="0" aria-valuemax="100" style="width: @Model.vocality%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.vocality%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <div class="progress-holder">
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Need For Attention</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.need_for_attn" aria-valuemin="0" aria-valuemax="100" style="width: @Model.need_for_attn%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.need_for_attn%" aria-describedby="tooltip443011"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Affection Towards Its Owners</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.affection" aria-valuemin="0" aria-valuemax="100" style="width: @Model.affection%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.affection%" aria-describedby="tooltip656043"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Docility</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.docility" aria-valuemin="0" aria-valuemax="100" style="width: @Model.docility%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.docility%" aria-describedby="tooltip880607"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Intelligence</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.intelligence" aria-valuemin="0" aria-valuemax="100" style="width: @Model.intelligence%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.intelligence%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Independence</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.independence" aria-valuemin="0" aria-valuemax="100" style="width: @Model.independence%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.independence%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                                <div class="barWrapper">
+                                    <span class="progressText"><b>Hardiness</b></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="@Model.hardiness" aria-valuemin="0" aria-valuemax="100" style="width: @Model.hardiness%;"></div>
+                                        <span class="popOver" data-toggle="tooltip" data-placement="top" title="" data-original-title="@Model.hardiness%" aria-describedby="tooltip616792"> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="member_desc">
+                        <h4>Persionality</h4>
+                        @Html.Raw(@Model.personality)
+                    </div>
+                    <hr />
+                    <div class="member_desc">
+                        <h4>History</h4>
+                        @Html.Raw(@Model.history)
+                    </div>
+
+
+                    <hr />
+                    <h4>Physical Attributes</h4>
+                    <div class="row ">
+
+                        <div class="col-lg-6 member_desc">
+                            <h4>Body</h4>
+                            <p>@Model.body</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Legs & Paws</h4>
+                            <p>@Model.legs_paws</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Head</h4>
+                            <p>@Model.head</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Coat</h4>
+                            <p>@Model.coat</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Ears</h4>
+                            <p>@Model.ears</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Color</h4>
+                            <p>@Model.color</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Eyes</h4>
+                            <p>@Model.eyes</p>
+                        </div>
+                        <div class="col-lg-6 member_desc">
+                            <h4>Tail</h4>
+                            <p>@Model.tail</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="member_desc">
+                        <h4 class="text-danger">Disclaimer</h4>
+                        @Html.Raw(@Model.disclaimer)
+                    </div>
+
+                    <h4></h4>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    @*</header>*@
+</div>
+
+
+
+

@@ -1,0 +1,45 @@
+﻿@model royalcatbreed.Models.cats_front_page
+
+@{
+    ViewBag.Title = "Cat Problems";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @*<header class="jumbotron my-4">*@
+    <br />
+    <section class="member-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="img-container">
+                        <img class="card-img-top" src="~/Content/img/@Model.foto" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="member_designation">
+                        <h2>@Model.cat_name</h2>
+                    </div>
+                    <div class="member_desc">
+                        <p>
+                            @Html.Raw(Model.cat_problems)
+                        </p>
+
+                    </div>
+                    <hr />
+                    <div class="member_desc">
+                        <h4 class="text-danger">Disclaimer</h4>
+                        @Html.Raw(@Model.disclaimer)
+                    </div>
+
+                    <h4></h4>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    @*</header>*@
+</div>
+

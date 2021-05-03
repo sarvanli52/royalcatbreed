@@ -1,0 +1,51 @@
+﻿﻿@model List<royalcatbreed.Models.cats_front_page>
+   
+
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container ">
+    @*Jumbotron Header*@
+    <header class="jumbotron my-4 ">
+        <h2 class="elementor-heading-title elementor-size-default text-warning">Find the Right Cat Breed for You</h2>
+        <p class="lead text-dark">
+            The Cat Fanciers' Association(CFA) currently recognizes 45 pedigreed breeds, as well as non-pedigreed Companion Cats.<br />
+
+            42 breeds are eligible to compete in the Championship, Premiership, Kitten and Veteran Classes.  3 breeds (the Khao Manee, Lykoi, and Toybob) are eligible to be shown in the non-competitive  Miscellaneous Class, working toward advancement.<br />
+
+            Companion Cats (CCW) are eligible to compete in the Household Pet (HHP) class.<br />
+
+            On this wesbite, 30 different cat breeds are listed. To learn more about any of the breeds, click on the links below…
+        </p>
+    </header>
+
+
+    <hr />
+
+    <!-- Page Features -->
+    
+
+    <div class="row text-center">
+        @foreach (var cat in Model)
+        {
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="~/Content/img/@cat.foto" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">@cat.cat_name</h4>
+                        @*<p class="card-text">@cat.cat_text</p>*@
+                    </div>
+                    <div class="card-footer">
+                        <a href="@Url.Action("CatBreed","Default", new {cat_name=cat.cat_name})" class="btn btn-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+</div>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="catbreedModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="cats_front_page">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="foto" Nullable="false" MaxLength="250" Type="char" />
+          <Property Name="cat_name" Nullable="false" MaxLength="250" Type="char" />
+          <Property Name="cat_text" Nullable="false" Type="text" />
+          <Property Name="personality" Nullable="false" Type="text" />
+          <Property Name="history" Nullable="false" Type="text" />
+          <Property Name="body" Nullable="false" Type="text" />
+          <Property Name="legs_paws" Nullable="false" Type="text" />
+          <Property Name="head" Nullable="false" Type="text" />
+          <Property Name="coat" Nullable="false" Type="text" />
+          <Property Name="ears" Nullable="false" Type="text" />
+          <Property Name="color" Nullable="false" Type="text" />
+          <Property Name="eyes" Nullable="false" Type="text" />
+          <Property Name="tail" Nullable="false" Type="text" />
+          <Property Name="disclaimer" Nullable="false" Type="text" />
+          <Property Name="playfulness" Nullable="false" Type="int" />
+          <Property Name="atcivity_level" Nullable="false" Type="int" />
+          <Property Name="friendliness_others" Nullable="false" Type="int" />
+          <Property Name="friendliness_children" Nullable="false" Type="int" />
+          <Property Name="grooming_req" Nullable="false" Type="int" />
+          <Property Name="vocality" Nullable="false" Type="int" />
+          <Property Name="need_for_attn" Nullable="false" Type="int" />
+          <Property Name="affection" Nullable="false" Type="int" />
+          <Property Name="docility" Nullable="false" Type="int" />
+          <Property Name="intelligence" Nullable="false" Type="int" />
+          <Property Name="independence" Nullable="false" Type="int" />
+          <Property Name="hardiness" Nullable="false" Type="int" />
+          <Property Name="cat_problems" Nullable="false" Type="text" />
+          <Property Name="home_instructions" Nullable="false" Type="text" />
+          <Property Name="cat_nutrition" Nullable="false" Type="text" />
+          <Property Name="cat_behavior_training" Nullable="false" Type="text" />
+          <Property Name="cat_grooming" Nullable="false" Type="text" />
+        </EntityType>
+        <EntityContainer Name="catbreedModelStoreContainer">
+          <EntitySet Name="cats_front_page" EntityType="Self.cats_front_page" Schema="catbreed" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="catbreedModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cats_front_page">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="foto" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="cat_name" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="cat_text" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="personality" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="history" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="body" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="legs_paws" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="head" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="coat" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="ears" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="color" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="eyes" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="tail" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="disclaimer" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="playfulness" Nullable="false" Type="Int32" />
+          <Property Name="atcivity_level" Nullable="false" Type="Int32" />
+          <Property Name="friendliness_others" Nullable="false" Type="Int32" />
+          <Property Name="friendliness_children" Nullable="false" Type="Int32" />
+          <Property Name="grooming_req" Nullable="false" Type="Int32" />
+          <Property Name="vocality" Nullable="false" Type="Int32" />
+          <Property Name="need_for_attn" Nullable="false" Type="Int32" />
+          <Property Name="affection" Nullable="false" Type="Int32" />
+          <Property Name="docility" Nullable="false" Type="Int32" />
+          <Property Name="intelligence" Nullable="false" Type="Int32" />
+          <Property Name="independence" Nullable="false" Type="Int32" />
+          <Property Name="hardiness" Nullable="false" Type="Int32" />
+          <Property Name="cat_problems" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="cat_nutrition" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="cat_behavior_training" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="cat_grooming" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="home_instructions" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" Type="String" />
+        </EntityType>
+        <EntityContainer Name="catbreedEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cats_front_page" EntityType="Self.cats_front_page" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="catbreedModelStoreContainer" CdmEntityContainer="catbreedEntities">
+          <EntitySetMapping Name="cats_front_page">
+            <EntityTypeMapping TypeName="catbreedModel.cats_front_page">
+              <MappingFragment StoreEntitySet="cats_front_page">
+                <ScalarProperty Name="home_instructions" ColumnName="home_instructions" />
+                <ScalarProperty Name="cat_grooming" ColumnName="cat_grooming" />
+                <ScalarProperty Name="cat_behavior_training" ColumnName="cat_behavior_training" />
+                <ScalarProperty Name="cat_nutrition" ColumnName="cat_nutrition" />
+                <ScalarProperty Name="cat_problems" ColumnName="cat_problems" />
+                <ScalarProperty Name="hardiness" ColumnName="hardiness" />
+                <ScalarProperty Name="independence" ColumnName="independence" />
+                <ScalarProperty Name="intelligence" ColumnName="intelligence" />
+                <ScalarProperty Name="docility" ColumnName="docility" />
+                <ScalarProperty Name="affection" ColumnName="affection" />
+                <ScalarProperty Name="need_for_attn" ColumnName="need_for_attn" />
+                <ScalarProperty Name="vocality" ColumnName="vocality" />
+                <ScalarProperty Name="grooming_req" ColumnName="grooming_req" />
+                <ScalarProperty Name="friendliness_children" ColumnName="friendliness_children" />
+                <ScalarProperty Name="friendliness_others" ColumnName="friendliness_others" />
+                <ScalarProperty Name="atcivity_level" ColumnName="atcivity_level" />
+                <ScalarProperty Name="playfulness" ColumnName="playfulness" />
+                <ScalarProperty Name="disclaimer" ColumnName="disclaimer" />
+                <ScalarProperty Name="tail" ColumnName="tail" />
+                <ScalarProperty Name="eyes" ColumnName="eyes" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="ears" ColumnName="ears" />
+                <ScalarProperty Name="coat" ColumnName="coat" />
+                <ScalarProperty Name="head" ColumnName="head" />
+                <ScalarProperty Name="legs_paws" ColumnName="legs_paws" />
+                <ScalarProperty Name="body" ColumnName="body" />
+                <ScalarProperty Name="history" ColumnName="history" />
+                <ScalarProperty Name="personality" ColumnName="personality" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="foto" ColumnName="foto" />
+                <ScalarProperty Name="cat_name" ColumnName="cat_name" />
+                <ScalarProperty Name="cat_text" ColumnName="cat_text" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
