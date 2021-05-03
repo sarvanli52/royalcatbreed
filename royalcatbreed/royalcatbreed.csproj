@@ -392,23 +392,6 @@
     <Content Include="Scripts\DataTables\responsive.semanticui.min.js" />
     <Content Include="Scripts\jquery-1.7.js" />
     <Content Include="Scripts\jquery-1.7.min.js" />
-    <Content Include="Source\css\heroic-features.css" />
-    <Content Include="Source\gulpfile.js" />
-    <Content Include="Source\index.html" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-grid.css" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-grid.min.css" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-reboot.css" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-reboot.min.css" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap.css" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.bundle.js" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.bundle.min.js" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.js" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Source\vendor\jquery\jquery.js" />
-    <Content Include="Source\vendor\jquery\jquery.min.js" />
-    <Content Include="Source\vendor\jquery\jquery.slim.js" />
-    <Content Include="Source\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -462,24 +445,6 @@
       <Link>.editorconfig</Link>
     </Content>
     <None Include="packages.config" />
-    <Content Include="Source\.gitignore" />
-    <Content Include="Source\.travis.yml" />
-    <Content Include="Source\LICENSE" />
-    <Content Include="Source\package-lock.json" />
-    <Content Include="Source\package.json" />
-    <Content Include="Source\README.md" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-grid.css.map" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-reboot.css.map" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap.css.map" />
-    <Content Include="Source\vendor\bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.bundle.js.map" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.js.map" />
-    <Content Include="Source\vendor\bootstrap\js\bootstrap.min.js.map" />
-    <Content Include="Source\vendor\jquery\jquery.min.map" />
-    <Content Include="Source\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\About.cshtml" />
